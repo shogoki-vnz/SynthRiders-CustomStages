@@ -20,6 +20,16 @@ Open the Demo Scene and make the changes to the Assets, once all the changes are
 
 When the export is completed just copy the file with the .stage extension and paste it into the CustomStages folder inside Synth Riders game, and the stage should appear in the stage selection menu
 
+Be aware that the name of the following items must not be changed:
+
+    * MenuItems/BG
+    * MenuItems/Thumb
+    * Prefabs/StageTile01
+    * Prefabs/StageTile02
+    * Prefabs/StageTile03
+    * Skybox/CustomSkybox
+
+
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/klugeinteractive/synth-riders-editor/tags). 
