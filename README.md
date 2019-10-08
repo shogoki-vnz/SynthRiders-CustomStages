@@ -18,17 +18,23 @@ Just clone the contents of this repository and open the project on Unity
 
 Open the Demo Scene and make the changes to the Assets, once all the changes are made be sure to apply the changes to the StageTile prefabs. To export just go to the menu SynthRiders > Export Stage Bundle, you will be asked to set the Name of the Stage Bundle, once the name is set press Export.
 
-When the export is completed just copy the file with the .stage extension and paste it into the CustomStages folder inside Synth Riders game, and the stage should appear in the stage selection menu
+When the export is completed just copy the file with the .stage extension and paste it into the CustomStages folder inside Synth Riders game, and the stage should appear in the stage selection menu.
 
-Be aware that the name of the following items must not be changed:
+All elements inside the _CustomStageElements folder will be exported, you can use all the non-code Assets (such as Models, Textures, Prefabs, Audio clips, etc), to build your custom stage.
+
+Please preserve the size of the Thumb and BG image elements, for the correct display in the game.
+
+Be aware that the names of the following items must not be changed:
 
     * MenuItems/BG
     * MenuItems/Thumb
     * Prefabs/StageTile01
     * Prefabs/StageTile02
     * Prefabs/StageTile03
+    * Prefabs/Platform
     * Skybox/CustomSkybox
 
+If you don't want to replace the default platform, just delete o move the item Platform out of the _CustomStageElements folder
 
 ## Versioning
 
