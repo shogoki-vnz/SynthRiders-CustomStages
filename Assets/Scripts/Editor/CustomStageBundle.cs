@@ -27,7 +27,7 @@ public class CustomStageBundle : EditorWindow
         BundleName = EditorGUILayout.TextField("Custom Stage Name: ", BundleName);
         
         GUILayout.Space(70);
-        if (GUILayout.Button("Export")) {
+        if (GUILayout.Button("Export PC")) {
             if(BundleName == null || BundleName.Equals(string.Empty)) {
                 Debug.LogError("Please set the bundle name");
             } else {
@@ -42,6 +42,27 @@ public class CustomStageBundle : EditorWindow
                 } 
 
                 BuildPipeline.BuildAssetBundles(bundleExportPath, BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows);
+                EditorUtility.RevealInFinder($"{bundleExportPath}");
+                Debug.Log($"Export complete, to directory {bundleExportPath}");
+                this.Close();
+            }             
+        }
+
+        if (GUILayout.Button("Export Quest")) {
+            if(BundleName == null || BundleName.Equals(string.Empty)) {
+                Debug.LogError("Please set the bundle name");
+            } else {
+                Debug.Log($"Bundle Name set to {BundleName}");
+
+                AssetImporter.GetAtPath(AssetsPath).SetAssetBundleNameAndVariant($"{BundleName}.stagequest", "");
+                string bundleExportPath = $"{Application.dataPath}/../{ExportPath}/{BundleName}/";
+
+                if(!Directory.Exists(bundleExportPath))
+                {
+                    Directory.CreateDirectory(bundleExportPath);
+                } 
+
+                BuildPipeline.BuildAssetBundles(bundleExportPath, BuildAssetBundleOptions.None, BuildTarget.Android);
                 EditorUtility.RevealInFinder($"{bundleExportPath}");
                 Debug.Log($"Export complete, to directory {bundleExportPath}");
                 this.Close();
