@@ -2,12 +2,14 @@
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using System;
 
 public class CustomStageBundle : EditorWindow
 {
     private const string AssetsPath = "Assets/_CustomStageElements";
     private string ExportPath = "Build";
     private static string BundleName { get; set; }
+    private bool IsForSpinMode { get; set; }
 
     [MenuItem("SynthRiders/Export Stage Bundle")]
     static void ExportCustomStageBundle()
@@ -23,8 +25,10 @@ public class CustomStageBundle : EditorWindow
     {
         GUILayout.Space(20);
         ExportPath = EditorGUILayout.TextField("Export Path: ", ExportPath);
-        GUILayout.Space(20);
+        GUILayout.Space(10);
         BundleName = EditorGUILayout.TextField("Custom Stage Name: ", BundleName);
+        GUILayout.Space(10);
+        IsForSpinMode = EditorGUILayout.Toggle("For spin mode?", IsForSpinMode);
         
         GUILayout.Space(70);
         if (GUILayout.Button("Export PC")) {
@@ -33,8 +37,13 @@ public class CustomStageBundle : EditorWindow
             } else {
                 Debug.Log($"Bundle Name set to {BundleName}");
 
-                AssetImporter.GetAtPath(AssetsPath).SetAssetBundleNameAndVariant($"{BundleName}.stage", "");
-                string bundleExportPath = $"{Application.dataPath}/../{ExportPath}/{BundleName}/";
+                string extention = "stage";
+                if(IsForSpinMode) {
+                    extention = "spinstage";
+                }
+                string sanitizeBundleName = SanitizeString(BundleName);
+                AssetImporter.GetAtPath(AssetsPath).SetAssetBundleNameAndVariant($"{sanitizeBundleName}.{extention}", "");
+                string bundleExportPath = $"{Application.dataPath}/../{ExportPath}/{sanitizeBundleName}/";
 
                 if(!Directory.Exists(bundleExportPath))
                 {
@@ -54,8 +63,13 @@ public class CustomStageBundle : EditorWindow
             } else {
                 Debug.Log($"Bundle Name set to {BundleName}");
 
-                AssetImporter.GetAtPath(AssetsPath).SetAssetBundleNameAndVariant($"{BundleName}.stagequest", "");
-                string bundleExportPath = $"{Application.dataPath}/../{ExportPath}/{BundleName}/";
+                string extention = "stagequest";
+                if(IsForSpinMode) {
+                    extention = "spinstagequest";
+                }
+                string sanitizeBundleName = SanitizeString(BundleName);
+                AssetImporter.GetAtPath(AssetsPath).SetAssetBundleNameAndVariant($"{sanitizeBundleName}.{extention}", "");
+                string bundleExportPath = $"{Application.dataPath}/../{ExportPath}/{sanitizeBundleName}/";
 
                 if(!Directory.Exists(bundleExportPath))
                 {
@@ -74,4 +88,9 @@ public class CustomStageBundle : EditorWindow
         }
         this.Repaint();
     }
+
+    private static string SanitizeString(string dirtyString)
+	{
+		return new String(dirtyString.Where(Char.IsLetterOrDigit).ToArray());
+	}
 }

@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Currenlty supported on Unity 2018.4.6f1. It is recomended the installation of [Unity Hub](https://store.unity.com/download?ref=personal/) for the ease of management of multiple versions of Unity
+Currenlty supported on Unity 2019.4.4f1. It is recomended the installation of [Unity Hub](https://store.unity.com/download?ref=personal/) for the ease of management of multiple versions of Unity
 
 ### Installing
 
@@ -33,8 +33,9 @@ Be aware that the names of the following items must not be changed:
     * Prefabs/StageTile03
     * Prefabs/Platform
     * Skybox/CustomSkybox
+    * Prefabs/SpinEmitter
 
-If you don't want to replace the default platform, just delete o move the item Platform out of the _CustomStageElements folder
+If you don't want to replace the default platform or default spin emitter, just delete o move the prefabs out of the _CustomStageElements folder
 
 ## Versioning
 
