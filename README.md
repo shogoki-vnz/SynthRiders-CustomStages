@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Currenlty supported on Unity 2019.4.4f1. It is recomended the installation of [Unity Hub](https://store.unity.com/download?ref=personal/) for the ease of management of multiple versions of Unity
+Currenlty supported on Unity 2019.4.21f1. It is recomended the installation of [Unity Hub](https://store.unity.com/download?ref=personal/) for the ease of management of multiple versions of Unity
 
 ### Installing
 
