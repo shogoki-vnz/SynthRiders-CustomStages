@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ExcludeTeleport
   - TeleportIgnore
+  - StageEvents
   layers:
   - Default
   - TransparentFX
@@ -16,28 +17,28 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - HEADSET CAMERA ONLY
-  - THIRD PERSON CAMERA ONLY
+  - SingleTileReset
+  - TileResetBox
   - 
   - 
   - 
   - 
-  - ControllerTrails
   - 
   - 
   - 
   - 
-  - Player Avatar
-  - 
-  - Notes
-  - 
-  - 
-  - Controller Indicators
   - 
   - 
   - 
   - 
-  - Obstacles
+  - 
+  - Mask
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   m_SortingLayers:
   - name: Default

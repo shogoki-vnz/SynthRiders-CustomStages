@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c854b8a88ce6dad428c03ea6f5ae3e12
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - currentWorkspaceSave: {fileID: 11400000, guid: 512bc98d0b7e33d40827d820c2bbfcd9,
+      type: 2}
+  - WorkspaceListItem: {fileID: 9197481963319205126, guid: a3696946e607ee2448efd089090407e0,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

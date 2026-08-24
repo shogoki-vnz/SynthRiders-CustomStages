@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/SRStageWrench/Editor/UI/Workspace.uss?fileID=7433441132597879392&amp;guid=1f3fa551d82e2104f9400199a686fa27&amp;type=3#Workspace"/>
+    <ui:VisualElement name="exportWrap" style="flex-grow: 1; display: flex;">
+        <ui:Label text="Export Custom Stage" display-tooltip-when-elided="true" name="label" style="-unity-font-definition: resource(&quot;Rubik-Regular&quot;); font-size: 30px; -unity-text-align: middle-center; margin-top: 5px; margin-bottom: 5px;"/>
+        <ui:VisualElement name="currentSpace" style="flex-grow: 1;">
+            <ui:VisualElement name="workspace">
+                <ui:VisualElement name="rootPadding" style="justify-content: space-around; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; background-color: rgb(51, 51, 51);">
+                    <ui:VisualElement name="workspaceInfo" style="justify-content: space-between; flex-direction: row; flex-grow: 1; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+                        <ui:VisualElement name="icon" style="background-image: resource(&quot;containerIcon&quot;); width: 40px; height: 40px; -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgb(128, 33, 252); margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;"/>
+                        <ui:Label text="Workspace" display-tooltip-when-elided="true" name="workspaceName" binding-path="workspaceName" style="-unity-font-definition: resource(&quot;Rubik-Regular&quot;); -unity-font: resource(&quot;Rubik-Regular&quot;); font-size: 20px; padding-left: 5px; min-height: initial; min-width: auto; justify-content: space-between; flex-grow: 1; flex-shrink: 1; width: 200px; height: 50px; padding-top: 2px;">
+                            <ui:Label text="Andromeda" display-tooltip-when-elided="true" name="creator" binding-path="workspaceCreator" style="justify-content: space-around; -unity-text-align: lower-left; align-items: flex-start; flex-grow: 1; flex-shrink: 1; color: rgb(173, 173, 173); font-size: 18px; margin-bottom: 3px;"/>
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="tags" style="justify-content: flex-start; flex-direction: row; border-top-width: 2px; flex-grow: 1; flex-shrink: 1; margin-bottom: 5px; padding-top: 5px; border-top-color: rgb(35, 35, 35); padding-left: 5px;">
+                        <ui:Label text="NORMAL" display-tooltip-when-elided="true" name="normal" style="color: rgb(171, 106, 255); border-left-color: rgb(171, 106, 255); border-right-color: rgb(171, 106, 255); border-top-color: rgb(171, 106, 255); border-bottom-color: rgb(171, 106, 255); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; padding-left: 2px; -unity-text-align: middle-center; margin-left: 3px; margin-right: 3px; -unity-font-definition: resource(&quot;Rubik-Regular&quot;); -unity-font: resource(&quot;Rubik-Regular&quot;);"/>
+                        <ui:Label text="SPIN" display-tooltip-when-elided="true" name="spin" style="color: rgb(253, 61, 176); border-left-color: rgb(253, 61, 176); border-right-color: rgb(253, 61, 176); border-top-color: rgb(253, 61, 176); border-bottom-color: rgb(253, 61, 176); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; -unity-text-align: middle-center; padding-left: 2px; margin-left: 3px; margin-right: 3px; -unity-font-definition: resource(&quot;Rubik-Regular&quot;); -unity-font: resource(&quot;Rubik-Regular&quot;);"/>
+                        <ui:Label text="EXP" display-tooltip-when-elided="true" name="exp" style="color: rgb(41, 124, 248); border-left-color: rgb(41, 124, 248); border-right-color: rgb(41, 124, 248); border-top-color: rgb(41, 124, 248); border-bottom-color: rgb(41, 124, 248); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; padding-left: 2px; margin-left: 3px; margin-right: 3px; -unity-font-definition: resource(&quot;Rubik-Regular&quot;); -unity-font: resource(&quot;Rubik-Regular&quot;); -unity-text-align: middle-center;"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="helpBoxWrap" style="justify-content: space-around; flex-grow: 1; display: none;"/>
+            <ui:VisualElement name="format" style="align-items: flex-start; flex-direction: column; justify-content: space-around; width: 50%; flex-grow: 1; display: flex;">
+                <ui:Toggle label="PCVR" name="exportPCVR" style="flex-direction: row-reverse; -unity-text-align: upper-left; justify-content: space-between; align-items: auto; -unity-font-definition: resource(&quot;Rubik-Regular&quot;); -unity-font: resource(&quot;Rubik-Regular&quot;); overflow: visible; margin-bottom: 1px; width: 65%;"/>
+                <ui:Toggle label="Android" name="exportANDROID" style="flex-direction: row-reverse; -unity-text-align: upper-left; justify-content: space-between; align-items: auto; -unity-font-definition: resource(&quot;Rubik-Regular&quot;); -unity-font: resource(&quot;Rubik-Regular&quot;); overflow: visible; margin-bottom: 1px; width: 65%;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="buttons" style="flex-direction: row; justify-content: space-between; margin-top: 5px;">
+                <ui:Button text="Cancel" display-tooltip-when-elided="true" name="cancelExport" class="normButton" style="width: 100px;"/>
+                <ui:VisualElement name="rightButtons" style="flex-direction: row;">
+                    <ui:Button text="Export Bundled for Upload" display-tooltip-when-elided="true" name="exportBundled" class="normButton"/>
+                    <ui:Button text="Export" display-tooltip-when-elided="true" name="exportSeperate" class="normButton"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="activeWrap" style="flex-grow: 1; display: none;">
+        <ui:Label text="A Workspace must be set Active in order to export " display-tooltip-when-elided="true" name="warning" style="-unity-font-definition: resource(&quot;Ubuntu-Regular SDF&quot;); -unity-font: resource(&quot;Ubuntu-Regular&quot;); -unity-text-align: middle-center; font-size: 28px; white-space: normal; color: rgba(255, 0, 0, 255); -unity-font-style: bold; justify-content: space-around; align-items: center; flex-shrink: 1; flex-grow: 1;"/>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,25 @@
+#row{
+    background-color: #333333
+    border-right-width: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.unity-collection-view__item--selected #row {
+    background-color: rgb(34, 34, 34);
+    border-right-width: 7px;
+    border-right-color: rgb(174, 3, 255);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#icon {
+    -unity-background-image-tint-color: rgb(137, 137, 137);
+}
+
+.unity-collection-view__item--selected > * > * > * > #icon{
+    -unity-background-image-tint-color: rgb(128, 33, 252);
+}

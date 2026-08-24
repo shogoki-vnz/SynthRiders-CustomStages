@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5920553322122943720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6656523669294020422}
+  - component: {fileID: 7613591107225529287}
+  m_Layer: 0
+  m_Name: CustomStageInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6656523669294020422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5920553322122943720}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7613591107225529287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5920553322122943720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2104a15aa352ba24abdf380ae8ac8118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StageRenderPipeline: SRP
+  ReleaseChannel: Release
+  StageTemplateVersion: 0.41
+  isNormStage: 0
+  normStageIcon: {fileID: 0}
+  normStageName: 
+  normStageAuthor: 
+  normTile01: {fileID: 0}
+  normTile02: {fileID: 0}
+  normTile03: {fileID: 0}
+  normplatform: {fileID: 0}
+  normSpecialFX: {fileID: 0}
+  normSkybox: {fileID: 0}
+  isSpinStage: 0
+  spinStageIcon: {fileID: 0}
+  spinStageName: 
+  spinStageAuthor: 
+  spinPlatform: {fileID: 0}
+  spinEmitter: {fileID: 0}
+  spinSpecialFX: {fileID: 0}
+  spinSkybox: {fileID: 0}
+  isExperience: 0
+  expTag: 
+  expCover: {fileID: 0}
+  expName: 
+  expAuthor: 
+  expPromptBanner: {fileID: 0}
+  expPromptText: 
+  expPrefab: {fileID: 0}
+  expSpecialsFX: {fileID: 0}
+  expSkybox: {fileID: 0}

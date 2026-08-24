@@ -1,0 +1,354 @@
+.root {
+    flex-grow: 1;
+    flex-direction: row;
+    max-width: none;
+    flex-basis: initial;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    max-height: none;
+}
+
+.spaceList {
+    flex-grow: 1;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: initial;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    max-width: 30%;
+}
+
+.spaceContainer {
+    flex-grow: 2;
+    width: auto;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    right: auto;
+    flex-basis: auto;
+    flex-shrink: 1;
+    justify-content: flex-start;
+    position: relative;
+    left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-left-color: rgb(255, 255, 255);
+    border-left-width: 1px;
+    max-width: 75%;
+    min-width: auto;
+    min-height: auto;
+}
+
+.normStageMeta {
+    flex-grow: 1;
+    flex-direction: row;
+    margin-top: 5px;
+    display: none;
+}
+
+.spinStageMeta {
+    flex-grow: 1;
+    flex-direction: row;
+    margin-top: 5px;
+    display: none;
+}
+
+.Tab {
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left-color: rgb(34, 34, 34);
+    border-right-color: rgb(34, 34, 34);
+    border-top-color: rgb(34, 34, 34);
+    border-bottom-color: rgb(34, 34, 34);
+    background-color: rgba(255, 255, 255, 0.07);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 1.5px;
+    margin-left: 15px;
+}
+
+.Tab:hover {
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left-color: rgb(34, 34, 34);
+    border-right-color: rgb(34, 34, 34);
+    border-top-color: rgb(34, 34, 34);
+    border-bottom-color: rgb(34, 34, 34);
+    background-color: rgb(56, 56, 56);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 1.5px;
+    margin-left: 15px;
+}
+
+.Tab:focus {
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left-color: rgb(56, 56, 56);
+    border-right-color: rgb(56, 56, 56);
+    border-top-color: rgb(56, 56, 56);
+    border-bottom-color: rgb(56, 56, 56);
+    background-color: rgb(56, 56, 56);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    margin-left: 15px;
+}
+
+.Tab-selected {
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left-color: rgb(56, 56, 56);
+    border-right-color: rgb(56, 56, 56);
+    border-top-color: rgb(56, 56, 56);
+    border-bottom-color: rgb(56, 56, 56);
+    background-color: rgb(56, 56, 56);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    margin-left: 15px;
+}
+
+.normButton:hover {
+    overflow: visible;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+}
+
+.normButton {
+    overflow: visible;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.deleteButton {
+    background-color: rgba(255, 0, 46, 0.15);
+    border-color: rgba(255, 0, 46, 0.4);
+    border-radius: 2px;
+    color: rgb(255, 0, 46);
+    justify-content: space-around;
+}
+
+.deleteButton:hover {
+    background-color: rgba(255, 0, 46, 0.2);
+    border-color: rgba(255, 0, 46, 0.6);
+    border-radius: 2px;
+    color: rgb(255, 0, 46);
+    justify-content: space-around;
+}
+
+.listView {
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+    max-width: initial;
+    min-width: initial;
+    width: initial;
+    flex-shrink: 1;
+}
+
+.normicon {
+}
+
+.spinicon {
+    flex-basis: 26%;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.unity-object-field-display__icon {
+    flex-basis: 26%;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50%;
+}
+
+#stageName .unity-base-text-field__input {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0);
+    height: 60px;
+    font-size: 35px;
+    -unity-text-align: middle-right;
+}
+
+#stageName .unity-base-text-field__input:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: rgba(0, 0, 0, 0.5);
+    height: 60px;
+    font-size: 35px;
+    -unity-text-align: middle-right;
+}
+
+#stageAuthor .unity-base-text-field__input {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0);
+    height: 30px;
+    font-size: 20px;
+    -unity-text-align: middle-right;
+}
+
+#stageAuthor .unity-base-text-field__input:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: rgba(0, 0, 0, 0.5);
+    height: 30px;
+    font-size: 20px;
+    -unity-text-align: middle-right;
+}
+
+#expName .unity-base-text-field__input {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-width: 0;
+    border-color: rgba(0, 0, 0, 0.5);
+    flex-grow: 0;
+    width: 70%;
+    height: 40px;
+    font-size: 25px;
+    -unity-text-align: middle-center;
+    -unity-font-definition: resource('Rubik-Regular SDF');
+    -unity-font: resource('FlatSkin/Font/Roboto-Regular');
+}
+
+#expName .unity-base-text-field__input:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.5);
+    flex-grow: 0;
+    width: 70%;
+    height: 40px;
+    font-size: 25px;
+    -unity-text-align: middle-center;
+    -unity-font-definition: resource('Rubik-Regular SDF');
+    -unity-font: resource('FlatSkin/Font/Roboto-Regular');
+}
+
+#expAuthor .unity-base-text-field__input {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-width: 0;
+    border-color: rgba(0, 0, 0, 0.5);
+    flex-grow: 0;
+    width: 50%;
+    height: 40px;
+    font-size: 25px;
+    -unity-text-align: middle-center;
+    -unity-font-definition: resource('Rubik-Regular SDF');
+    -unity-font: resource('FlatSkin/Font/Roboto-Regular');
+}
+
+#expAuthor .unity-base-text-field__input:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.5);
+    flex-grow: 0;
+    width: 50%;
+    height: 40px;
+    font-size: 25px;
+    -unity-text-align: middle-center;
+    -unity-font-definition: resource('Rubik-Regular SDF');
+    -unity-font: resource('FlatSkin/Font/Roboto-Regular');
+}
+
+#createdTime .unity-base-text-field__input {
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+    height: 30px;
+}
+
+.unity-collection-view {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.unity-base-text-field__input {
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0);
+    height: 30px;
+}
+
+.unity-base-text-field__input:hover {
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.spinIcon {
+}
+
+.normalObjectView {
+    font-size: 14px;
+    -unity-font-definition: resource('Rubik-Regular SDF');
+    -unity-font: resource('FlatSkin/Font/Roboto-Regular');
+}
+
+#textureRef .unity-object-field-display__icon {
+    width: 100px;
+}
+
+.checkBoxFlex .unity-toggle__checkmark {
+    margin-left: 0;
+    margin-right: 4px;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+}
+
+.checkBoxFlex .unity-toggle__text {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#normType .unity-base-field__input {
+    overflow: visible;
+    flex-direction: row-reverse;
+    border-width: 2px;
+    border-radius: 8px;
+    color: rgb(171, 106, 255);
+    border-color: rgb(171, 106, 255);
+}
+
+#spinType .unity-base-field__input {
+    overflow: visible;
+    flex-direction: row-reverse;
+    border-width: 2px;
+    border-radius: 8px;
+    color: rgb(253, 61, 176);
+    border-color: rgb(253, 61, 176);
+}
+
+#expType .unity-base-field__input {
+    overflow: visible;
+    flex-direction: row-reverse;
+    border-width: 2px;
+    border-radius: 8px;
+    color: rgb(41, 124, 248);
+    border-color: rgb(41, 124, 248);
+}
